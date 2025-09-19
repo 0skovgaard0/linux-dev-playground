@@ -1,0 +1,19 @@
+# Test hello world
+AT_TESTNAME="Hello-World-YATT-Test"
+
+# Start the test
+test_start
+
+# Set a variable to "Hello World"
+VAR_HELLO="Hello World"
+test_echo "Setting VAR_HELLO to $VAR_HELLO"
+
+# Check if VAR_HELLO matches "Hello World"
+if [ "$VAR_HELLO" = "Hello World" ]; then
+    test_echo "Test passed: VAR_HELLO is Hello World"
+else
+    test_echo "Test failed: VAR_HELLO is not Hello World"
+fi
+
+# End the test and summarize
+test_summary
