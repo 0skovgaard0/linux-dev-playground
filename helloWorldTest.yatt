@@ -4,7 +4,7 @@ AT_TESTNAME="Hello-World-YATT-Test"
 # Start the test
 test_start
 
-# Set a variable to "Hello World"
+# Setting a variable to "Hello World" for assertion
 VAR_HELLO="Hello World"
 test_echo "Setting VAR_HELLO to $VAR_HELLO"
 
